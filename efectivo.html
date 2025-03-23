@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pago en Efectivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pago en Efectivo</h1>
+        <form id="efectivo-form">
+            <label for="total-pagar">Total a Pagar:</label>
+            <input type="text" id="total-pagar" name="total-pagar" readonly><br><br>
+
+            <label for="cantidad-recibida">Cantidad Recibida:</label>
+            <input type="text" id="cantidad-recibida" name="cantidad-recibida" required><br><br>
+
+            <label for="cambio">Cambio:</label>
+            <input type="text" id="cambio" name="cambio" readonly><br><br>
+
+            <button type="submit">Pagar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

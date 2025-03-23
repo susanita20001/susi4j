@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega Local</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Entrega Local</h1>
+        <form id="entrega-local-form">
+            <label for="nombre-cliente">Nombre del Cliente:</label>
+            <input type="text" id="nombre-cliente" name="nombre-cliente" readonly><br><br>
+
+            <label for="total-pedido">Total del Pedido:</label>
+            <input type="text" id="total-pedido" name="total-pedido" readonly><br><br>
+
+            <label>Detalles del Pedido:</label><br>
+            <textarea id="detalles-pedido" name="detalles-pedido" rows="5" readonly></textarea><br><br>
+
+            <label>Método de Pago:</label><br>
+            <input type="radio" id="tarjeta" name="pago" value="tarjeta" required> Tarjeta de Crédito/Débito<br>
+            <input type="radio" id="efectivo" name="pago" value="efectivo" required> Efectivo<br><br>
+
+            <button type="submit">Continuar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

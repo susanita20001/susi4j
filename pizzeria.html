@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzería</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido a la Pizzería</h1>
+        <form id="pizzeria-form">
+            <label for="nombre">Nombre del Cliente:</label>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="fecha">Fecha:</label>
+            <input type="text" id="fecha" name="fecha" readonly><br><br>
+
+            <label for="pizza1">Selecciona tu Pizza 1:</label>
+            <select id="pizza1" name="pizza1" required>
+                <option value="10">Pizza Mexicana ($10)</option>
+                <option value="11">Pizza Hawaiana ($11)</option>
+                <option value="12">Pizza Pepperoni ($12)</option>
+            </select><br><br>
+
+            <label for="pizza2">Selecciona tu Pizza 2:</label>
+            <select id="pizza2" name="pizza2" required>
+                <option value="10">Pizza Mexicana ($10)</option>
+                <option value="11">Pizza Hawaiana ($11)</option>
+                <option value="12">Pizza Pepperoni ($12)</option>
+            </select><br><br>
+
+            <label for="pizza3">Selecciona tu Pizza 3:</label>
+            <select id="pizza3" name="pizza3" required>
+                <option value="10">Pizza Mexicana ($10)</option>
+                <option value="11">Pizza Hawaiana ($11)</option>
+                <option value="12">Pizza Pepperoni ($12)</option>
+            </select><br><br>
+
+            <label>Complementos:</label><br>
+            <input type="checkbox" id="queso" name="complementos" value="2"> Queso Extra ($2)<br>
+            <input type="checkbox" id="orilla" name="complementos" value="3"> Orilla Rellena ($3)<br>
+            <input type="checkbox" id="refresco" name="complementos" value="1"> Refresco ($1)<br>
+            <input type="checkbox" id="papas" name="complementos" value="2"> Papas ($2)<br><br>
+
+            <label>Método de Entrega:</label><br>
+            <input type="radio" id="local" name="entrega" value="local" required> Entrega Local<br>
+            <input type="radio" id="envio" name="entrega" value="envio" required> Envío a Domicilio<br><br>
+
+            <button type="button" id="calcular-total">Calcular Total de Pizzas</button><br><br>
+            <p id="total-pizzas" class="total">Total de Pizzas: $0</p><br>
+
+            <button type="submit">Continuar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

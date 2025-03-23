@@ -1,0 +1,39 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envío a Domicilio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Envío a Domicilio</h1>
+        <form id="envio-form">
+            <label for="nombre-cliente">Nombre del Cliente:</label>
+            <input type="text" id="nombre-cliente" name="nombre-cliente" readonly><br><br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="text" id="telefono" name="telefono" required><br><br>
+
+            <label for="domicilio">Domicilio:</label>
+            <input type="text" id="domicilio" name="domicilio" required><br><br>
+
+            <label for="calle">Calle:</label>
+            <input type="text" id="calle" name="calle" required><br><br>
+
+            <label for="municipio">Municipio:</label>
+            <input type="text" id="municipio" name="municipio" required><br><br>
+
+            <label for="estado">Estado:</label>
+            <input type="text" id="estado" name="estado" required><br><br>
+
+            <label>Método de Pago:</label><br>
+            <input type="radio" id="tarjeta" name="pago" value="tarjeta" required> Tarjeta de Crédito/Débito<br>
+            <input type="radio" id="efectivo" name="pago" value="efectivo" required> Efectivo<br><br>
+
+            <button type="submit">Continuar</button>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
